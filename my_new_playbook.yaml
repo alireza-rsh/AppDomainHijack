@@ -1,0 +1,9 @@
+
+---
+- name: Sample Playbook for AppDomainHijack
+  hosts: localhost
+  tasks:
+    - name: Ensure AppDomainHijack service is running
+      service:
+        name: appdomainhijack
+        state: started
